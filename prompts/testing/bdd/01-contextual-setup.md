@@ -1,9 +1,9 @@
 # Contextual Setup and Objectives
 
-**Author:** Philip Daye (@pjdaye)
-**Language:** N/A
-**Use Case:** Set context for test generation
-**Tags:** context, persona, parameters
+**Author:** Philip Daye (@pjdaye)  
+**Language:** N/A  
+**Use Case:** Set context for test generation  
+**Tags:** context, persona, parameters  
 **Parameters:**  
 
 - `quality_engineering_profile`: Describe the engineer in terms of seniority and skill level

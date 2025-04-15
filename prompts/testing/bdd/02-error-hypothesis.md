@@ -1,46 +1,25 @@
 # Define Error Hypothesis
 
-**Author:** Philip Daye (@pjdaye)
-**Language:** N/A
-**Use Case:** Risk Analysis
-**Tags:** risk-analysis, error-hypothesis
+**Author:** Philip Daye (@pjdaye)  
+**Language:** N/A  
+**Use Case:** Risk Analysis  
+**Tags:** risk-analysis, error-hypothesis  
 **Parameters:**  
 
-- `parameter1`: Description of this placeholder.  
-- `parameter2`: Description of this placeholder.
+- `product_under_test`: The name of the product under test
+- `number_to_output`: The request number of outputs
 
 ## Prompt
 
-[Write the prompt instructions here, using placeholders like `{{parameter1}}` where appropriate.]
+Error hypotheses are assumptions about potential failure points within a system that help guide test data selection and scenario creation. Common examples include:
 
+- **Decisions:** Issues in logic (e.g., off-by-one errors, faulty decision-making).
+- **Translations:** Errors in data conversion between system layers.
+- **Assumptions:** Failures due to unverified or invalid assumptions.
 
+Do not limit your analysis to these examples. Based on the feature requirements for the `{{product_under_test}}`, independently evaluate and identify additional error hypotheses—including performance, concurrency, integration, security, and domain-specific risks.
 
-
-## **Prompt Structure:**
-
-"Error hypotheses are assumptions about potential failure points within a system that help guide test data selection and scenario creation. Common examples include:
-
-* **Decisions:** Issues in logic (e.g., off-by-one errors, faulty decision-making).
-* **Translations:** Errors in data conversion between system layers.
-* **Assumptions:** Failures due to unverified or invalid assumptions.
-
-Do not limit your analysis to these examples. Based on the feature requirements for the {{product_under_test}}, independently evaluate and identify additional error hypotheses—including performance, concurrency, integration, security, and domain-specific risks.
-
-For each identified error hypothesis, provide a brief justification and rank the top {{number_to_output}} risks based on both likelihood and potential impact."
-
-Example:
-"For the Greenacre Loan Application, besides common error models, consider risks such as performance bottlenecks under high load, concurrency issues during simultaneous submissions, and security vulnerabilities in data handling. Provide a brief rationale for each and rank the top three risks based on likelihood and impact."
-
----
-
-## **Parameters:**
-
-| **Parameter Name**     | **Description**                    |
-|------------------------|------------------------------------|
-| {{product_under_test}} | The name of the product under test |
-| {{number_to_output}}   | The request number of outputs      |
-
----
+For each identified error hypothesis, provide a brief justification and rank the top `{{number_to_output}}` risks based on both likelihood and potential impact.
 
 ## **Instructions for Use:**
 
@@ -49,8 +28,6 @@ Example:
 3. **Run the Prompt:** Once customized, input the prompt into the Generative AI tool to get the desired outcome.
 4. Independently analyze and rank risks; ensure that the model expands beyond the provided examples.
 
----
-
 ## **Additional Notes:**
 
-* Add any additional error models for consideration.
+- Add any additional error models for consideration.

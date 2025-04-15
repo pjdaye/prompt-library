@@ -47,8 +47,6 @@
 - **Final Consolidation and Human Review:**  
   Review the consolidated test suite for completeness and consistency. Include your feedback and any execution insights.
 
----
-
 ## Efficiency Considerations
 
 - **Balance Accuracy and Token Cost:**  
@@ -57,5 +55,3 @@
   If outputs seem verbose or redundant, adjust the prompt with additional summarization or filtering instructions.
 - **Reuse of Standard Step Definitions:**  
   Incorporate references to an existing step library to reduce redundancy in Gherkin test cases.
-
----
