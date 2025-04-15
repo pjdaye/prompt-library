@@ -24,5 +24,5 @@ For each gap, suggest one or two additional BDD test cases in Given/When/Then fo
 
 ## **Additional Notes:**
 
-- Describer test techniques and how to do them.
+- Describe test techniques and how to do them.
 - Give the model the information it needs for the level of comprehensiveness required.
